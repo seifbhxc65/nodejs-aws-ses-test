@@ -1,0 +1,30 @@
+{
+  "name": "ses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "nodemon --watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seifbhxc65/nodejs-aws-ses-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/seifbhxc65/nodejs-aws-ses-test/issues"
+  },
+  "homepage": "https://github.com/seifbhxc65/nodejs-aws-ses-test#readme",
+  "dependencies": {
+    "a": "^3.0.1",
+    "aws-sdk": "^2.1555.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.2",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.3"
+  }
+}
