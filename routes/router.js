@@ -18,6 +18,7 @@ router.post("/send-email", function (req, res) {
     console.log("req", req.body);
     sesTest("saif40340@gmail.com", email, message, name)
       .then((val) => {
+
         console.log("got this back", val);
         res.send("Successfully Sent Email");
       })
@@ -32,7 +33,9 @@ router.post("/send-email", function (req, res) {
     console.log(`Sending email to: ${emailTo}`);
     var params = {
       Destination: {
+        
         ToAddresses: [emailTo]
+
       },
       Message: {
         Body: {
@@ -41,7 +44,7 @@ router.post("/send-email", function (req, res) {
   
         Subject: { Data: "From: " + emailFrom }
       },
-      Source: "seifedine.belhaj@gmail.com"
+      Source: "saif40340@gmail.com"
     };
   
     return ses.sendEmail(params).promise();
